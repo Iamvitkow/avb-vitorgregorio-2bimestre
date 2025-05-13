@@ -1,13 +1,13 @@
-import "./App.css";
-import AppRoutes from "./routes/AppRoutes";
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import PokemonDetails from './pages/PokemonDetails';
 
 function App() {
   return (
-    <>
-      <div>
-        <AppRoutes />
-      </div>
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/pokemon/:id" element={<PokemonDetails />} />
+    </Routes>
   );
 }
 
