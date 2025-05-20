@@ -13,3 +13,5 @@ export const getPokemonsUnova = async () => {
     return [];
   }
 };
+
+export default api;
